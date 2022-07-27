@@ -27,3 +27,14 @@ string[] ArrayComplete(string[] arr, int count)
     }
     return arrayNew;
 }
+
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]}, ");
+    }
+    Console.WriteLine();
+}
+
+PrintArray(ArrayComplete(arrayOld, ArrayFindWords3(arrayOld)));
